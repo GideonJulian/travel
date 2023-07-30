@@ -1,0 +1,37 @@
+
+$blue: #29d9d5;
+$black: #111;
+$light-color: #aaa;
+$white: #fff;
+$black-bg: rgba(17,17,17,.7);
+$bg-color: #222;
+$border: .2rem solid $blue;
+
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1.5rem;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+
+
+&::-webkit-scrollbar{
+  width: 1rem;
+}
+
+&::-webkit-scrollbar-track{
+  background: $black;
+}
+
+&::-webkit-scrollbar-thumb{
+  background: $blue;
+}
+
+}
+
+
